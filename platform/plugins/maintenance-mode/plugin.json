@@ -1,0 +1,10 @@
+{
+    "id": "botble/maintenance-mode",
+    "name": "Maintenance Mode",
+    "namespace": "Botble\\MaintenanceMode\\",
+    "provider": "Botble\\MaintenanceMode\\Providers\\MaintenanceModeServiceProvider",
+    "author": "zanegy Technologies",
+    "url": "https://zanegy.com",
+    "version": "2.2.2",
+    "description": "Manage maintenance mode from the admin panel"
+}

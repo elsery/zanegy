@@ -1,0 +1,10 @@
+{
+    "id": "botble/ads",
+    "name": "Ads",
+    "namespace": "Botble\\Ads\\",
+    "provider": "Botble\\Ads\\Providers\\AdsServiceProvider",
+    "author": "zanegy Technologies",
+    "url": "https://zanegy.com",
+    "version": "1.0",
+    "description": "Ads manager for zanegy CMS"
+}

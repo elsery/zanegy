@@ -1,0 +1,10 @@
+{
+    "id": "botble/shippo",
+    "name": "Shippo",
+    "namespace": "Botble\\Shippo\\",
+    "provider": "Botble\\Shippo\\Providers\\ShippoServiceProvider",
+    "author": "zanegy Technologies",
+    "url": "https://zanegy.com",
+    "version": "1.0.0",
+    "description": "Multi-Carrier Shippo Shipping Rates & Address Validation for Ecommerce"
+}

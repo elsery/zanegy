@@ -1,0 +1,11 @@
+{
+    "id": "botble/marketplace",
+    "name": "Marketplace",
+    "namespace": "Botble\\Marketplace\\",
+    "provider": "Botble\\Marketplace\\Providers\\MarketplaceServiceProvider",
+    "author": "zanegy technologies",
+    "url": "https://zanegy.com",
+    "version": "2.1.0",
+    "description": "Marketplace plugin for Ecommerce site",
+    "require": ["botble/ecommerce"]
+}

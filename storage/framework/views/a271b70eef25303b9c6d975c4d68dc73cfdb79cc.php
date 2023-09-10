@@ -1,0 +1,1 @@
+<?php echo e($item['name']); ?> : <span class="label ld-version-tag"><?php echo e($item['version']); ?></span><?php /**PATH C:\xampp\htdocs\work.com\platform/core/base/resources/views/system/partials/info-package-line.blade.php ENDPATH**/ ?>

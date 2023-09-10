@@ -1,0 +1,10 @@
+{
+    "id": "botble/newsletter",
+    "name": "Newsletter",
+    "namespace": "Botble\\Newsletter\\",
+    "provider": "Botble\\Newsletter\\Providers\\NewsletterServiceProvider",
+    "author": "zanegy Technologies",
+    "url": "https://zanegy.com",
+    "version": "2.0.0",
+    "description": "Newsletter"
+}
