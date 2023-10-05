@@ -80,9 +80,7 @@
                         <p>{{ __('Sold By') }}: <a href="{{ $product->store->url }}"><strong>{!! BaseHelper::clean($product->store->name) !!}</strong></a></p>
                     @endif
 
-                    {!! apply_filters('ecommerce_before_product_description', null, $product) !!}
-                    {!! BaseHelper::clean($product->description) !!}
-                    {!! apply_filters('ecommerce_after_product_description', null, $product) !!}
+    
                 </div>
 
                 <form class="add-to-cart-form" method="POST" action="{{ route('public.cart.add-to-cart') }}">
@@ -99,6 +97,10 @@
 
                     {!! render_product_options($product) !!}
 
+                      {!! apply_filters('ecommerce_before_product_description', null, $product) !!}
+                      {!! BaseHelper::clean($product->description) !!}
+                      {!! apply_filters('ecommerce_after_product_description', null, $product) !!}
+
                     {!! Theme::partial('product-availability', compact('product', 'productVariation')) !!}
 
                     {!! apply_filters(ECOMMERCE_PRODUCT_DETAIL_EXTRA_HTML, null, $product) !!}
@@ -111,6 +113,8 @@
                                 <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
                             </div>
                         @endif
+
+                        
 
                         <div class="product-extra-link2 @if (EcommerceHelper::isQuickBuyButtonEnabled()) has-buy-now-button @endif">
                             @if (EcommerceHelper::isCartEnabled())
@@ -137,9 +141,7 @@
 
                     <ul class="mr-50 float-start">
 
-                        <li class="mb-5 @if ($product->sku) d-none @endif" id="product-sku">
-                            <span class="d-inline-block">{{ __('SKU') }}</span>: <span class="sku-text">{{ $product->sku }}</span>
-                        </li>
+                        
 
                         @if ($product->categories->count())
                             <li class="mb-5">
@@ -158,12 +160,7 @@
                             </li>
                         @endif
 
-                        @if ($product->brand->id)
-                            <li class="mb-5">
-                                <span class="d-inline-block">{{ __('Brands') }}: </span>
-                                <a href="{{ $product->brand->url }}" title="{{ $product->brand->name }}">{{ $product->brand->name }}</a>
-                            </li>
-                        @endif
+                        
                     </ul>
                 </div>
             </div>
